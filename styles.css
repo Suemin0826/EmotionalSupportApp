@@ -1,0 +1,33 @@
+/* 간단한 스타일 예시 */
+#container {
+  text-align: center;
+  padding-top: 50px;
+}
+
+button {
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.breathing-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #00BFFF;
+  margin: 50px auto;
+  animation: breathe 3s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
